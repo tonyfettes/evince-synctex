@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "evince-synctex"
+version = "0.1.1"
+dependencies = [
+  "dbus-python"
+]
+authors = [
+  { name = "LaTeX LSP" }
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+  "License :: OSI Approved :: GNU General Public License (GPL)",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3.4",
+  "Programming Language :: Python :: 3.5",
+  "Programming Language :: Python :: 3.6",
+]
+
+[project.urls]
+Homepage = "https://github.com/latex-lsp/evince-synctex"
+Issues = "https://github.com/latex-lsp/evince-synctex/issues"
+
+[project.scripts]
+evince-synctex = "evince_synctex:main"
